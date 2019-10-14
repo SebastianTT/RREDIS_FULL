@@ -13,7 +13,7 @@
         </ion-card-header>
        
         <div *ngFor="let agenda of datosagenda |  filtro: textobuscar" >
-      
+        <ion-card>
          <ion-card-content >
            <p style="color:black;">
           <b>NOMBRE DEL CAMPUS:</b> {{agenda.espacio.campus.nombre_campus}}
@@ -29,7 +29,8 @@
           <br>
           <b>HORA DE INICIO:</b> {{agenda.hora_inicio}}
           </p>
-         </ion-card-content>   
+         </ion-card-content>  
+         </ion-card> 
       </div>
 
     </ion-card>
