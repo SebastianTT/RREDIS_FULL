@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title >BUSCA A TU MANERA ! </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+ 
+ 	<ion-card color="primary">
+    <ion-button ion-item color="dark" ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-start>
+ 
+      <ion-icon [name]="item.icon"  [ngStyle]="{'color': item.color}" > </ion-icon>
+        	{{ item.title }}
+    </ion-button>
+
+</ion-card>
+
+	<ion-card color="primary">
+    <ion-button ion-item color="dark" ion-item *ngFor="let item of items2" (click)="openNavDetailsPage3(item)" icon-start>
+ 
+      <ion-icon [name]="item.icon"  [ngStyle]="{'color': item.color}" > </ion-icon>
+        	{{ item.title }}
+    </ion-button>
+    
+</ion-card>
+
+
+	<ion-card color="primary">
+    <ion-button ion-item color="dark" ion-item *ngFor="let item of items3" (click)="openNavDetailsPage2(item)" icon-start>
+ 
+      <ion-icon [name]="item.icon"  [ngStyle]="{'color': item.color}" > </ion-icon>
+        	{{ item.title }}
+    </ion-button>
+    
+</ion-card>
+
+
+ 
+</ion-content>

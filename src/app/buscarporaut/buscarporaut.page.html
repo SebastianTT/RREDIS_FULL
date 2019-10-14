@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>BUSCAR POR SEMILLERO </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+
+      <ion-card class="bg-image no-scroll">
+     <ion-card-header>
+        <ion-searchbar animated (ionChange)="buscar($event)" color="dark"></ion-searchbar>
+        </ion-card-header>
+       
+        <div *ngFor="let agenda of datosagenda |  filtro: textobuscar " >
+      
+         <ion-card-content >
+           <p style="color:black;">
+
+          <b> IES:</b> {{agenda.espacio.campus.nombre_campus}}
+          <br>
+          <b> SEMILLERO:</b> {{ agenda.trabajo.semillero.nombre_semillero }}
+          <br>
+          <b> TÍTULO PROYECTO:</b> {{ agenda.trabajo.nombre_trabajo }}
+          <br>
+          <b>ID DEL PROYECTO:</b> {{ agenda.trabajo.id_trabajo}}
+          <br>
+          <b>ESPACIO DE SUSTENTACION:</b><br>
+           &nbsp;&nbsp;<ion-icon name="arrow-dropright-circle"></ion-icon>&nbsp; 
+           Campus {{ agenda.espacio.campus.nombre_campus}} - {{ agenda.espacio.descripcion}}
+            <br>
+          <b>HORA DE SUSTENTACIÓN:</b> {{agenda.hora_inicio}} -  {{agenda.hora_fin}}
+          </p>
+         </ion-card-content>   
+      </div>
+
+    </ion-card>
+  </ion-list>
+</ion-content>

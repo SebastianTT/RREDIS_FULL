@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>AGENDA  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+
+      <ion-card class="bg-image no-scroll">
+     <ion-card-header>
+        <ion-searchbar animated (ionChange)="buscar($event)" color="dark"></ion-searchbar>
+        </ion-card-header>
+       
+        <div *ngFor="let agenda of datosagenda |  filtro: textobuscar" >
+      
+         <ion-card-content >
+           <p style="color:black;">
+          <b>NOMBRE DEL CAMPUS:</b> {{agenda.espacio.campus.nombre_campus}}
+          <br>
+
+          <b> DESCRIPCION:</b> {{agenda.espacio.descripcion}}
+          <br>
+          <b> NOMBRE DEL TRABAJO:</b> {{agenda.trabajo.nombre_trabajo}}
+          <br>
+          <b> FECHA:</b> {{ agenda.fecha }}
+          <br>
+          <b>HORA QUE TERMINA:</b> {{agenda.hora_fin}}
+          <br>
+          <b>HORA DE INICIO:</b> {{agenda.hora_inicio}}
+          </p>
+         </ion-card-content>   
+      </div>
+
+    </ion-card>
+  </ion-list>
+</ion-content>
