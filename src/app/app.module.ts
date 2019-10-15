@@ -5,6 +5,7 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import {Platform } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -45,6 +46,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
    PipeiesModule,
    PipeautModule,
    PipeproModule,
+
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
@@ -58,6 +60,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
     FbserviceService,
     MenuProvider,
     Geolocation,
+      Platform,
   ],
   bootstrap: [AppComponent]
 })

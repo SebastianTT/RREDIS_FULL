@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import {FbserviceService} from '../../servicio/fbservice.service';
 
+
 @Component({
   selector: 'app-buscarpories',
   templateUrl: './buscarpories.page.html',
