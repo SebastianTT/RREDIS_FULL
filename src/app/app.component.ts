@@ -19,7 +19,7 @@ export class AppComponent {
    pages: any;
   public appPages = [
     {
-      title: 'Patrocinadores',
+      title: 'Login',
       url: '/home',
       icon: 'people'
     },
@@ -40,7 +40,16 @@ export class AppComponent {
       url: '/mapa',
       icon: 'map'
     },
- 
+    {
+      title: 'User',
+      url: '/user',
+      icon: 'people'
+    },
+    {
+      title: 'Patrocinadores',
+      url: '/patrocinadores',
+      icon: 'people'
+    },
 
   ];
 

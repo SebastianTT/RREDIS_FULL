@@ -30,6 +30,8 @@ const routes: Routes = [
   { path: 'buscarporpro', loadChildren: './buscarporpro/buscarporpro.module#BuscarporproPageModule' },
   { path: 'mapa', loadChildren: './mapa/mapa.module#MapaPageModule' },
   { path: 'tipo-p', loadChildren: './tipo-p/tipo-p.module#TipoPPageModule' },
+  { path: 'patrocinadores', loadChildren: './patrocinadores/patrocinadores.module#PatrocinadoresPageModule' },
+  { path: 'user', loadChildren: './user/user.module#UserPageModule' },
 
 
 

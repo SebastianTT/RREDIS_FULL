@@ -49,6 +49,9 @@ export class HomePage {
       .then(user => {
         //save user data on the native storage
         this.nativeStorage.setItem('google_user', {
+          name: user.displayName,
+          email: user.email,
+          picture: user.imageUrl
         })
         .then(() => {
           this.si();
@@ -69,7 +72,7 @@ export class HomePage {
   }
 
   si(){
-    this.router.navigate(["/list"]);
+    this.router.navigate(["/user"]);
   }
 
   async presentAlert() {
