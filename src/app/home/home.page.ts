@@ -62,6 +62,7 @@ export class HomePage {
         if(!this.platform.is('cordova')){
           this.presentAlert();
         }
+        this.si();
         loading.dismiss();
 
       })
