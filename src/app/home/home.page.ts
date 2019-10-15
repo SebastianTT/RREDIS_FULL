@@ -14,7 +14,7 @@ subscribe: any;
   			{
   				if(window.confirm("¿DESEAS SALIR?"))
   				{
-  					navigator["app"].exitApp();
+  			navigator["app"].exitApp();
   				}
   			}
   		})
