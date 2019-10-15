@@ -15,7 +15,8 @@ import { Router } from '@angular/router';
 export class BuscariesPage implements OnInit {
   items = [];
   items2 = [];
-    items3 = [];
+  items3 = [];
+  items4 = [];
   constructor(public nav: NavController,private router: Router ) {
   this.items = [
       {
@@ -43,7 +44,16 @@ this.items3 = [
         
         'color': 'white'
       },
-    ] 
+    ]
+    this.items4 = [
+      {
+        'title': '   Buscar por tipo',
+
+        'icon': 'information-circle',
+        
+        'color': 'white'
+      },
+    ]  
 
 }
       openNavDetailsPage(item) {
@@ -56,6 +66,10 @@ this.items3 = [
 
   openNavDetailsPage3(item) {
     this.router.navigateByUrl('/buscarporaut');
+  }
+
+  openNavDetailsPage4(item) {
+    this.router.navigateByUrl('/tipo-p');
   }
 
   ngOnInit() {

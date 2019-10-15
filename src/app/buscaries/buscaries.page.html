@@ -33,6 +33,14 @@
     </ion-button>
     
 </ion-card>
+<ion-card color="primary">
+  <ion-button ion-item color="dark" ion-item *ngFor="let item of items4" (click)="openNavDetailsPage4(item)" icon-start>
+
+    <ion-icon [name]="item.icon"  [ngStyle]="{'color': item.color}" > </ion-icon>
+        {{ item.title }}
+  </ion-button>
+  
+</ion-card>
 
 
  
