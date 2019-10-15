@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
+import { GooglePlus}from '@ionic-native/google-plus/ngx';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import {Platform } from '@ionic/angular';
-
+import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {AngularFireAuthModule} from '@angular/fire/auth';
@@ -54,6 +54,8 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
   ],
   providers: [
     StatusBar,
+    GooglePlus,
+    NativeStorage,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     AngularFireDatabase,

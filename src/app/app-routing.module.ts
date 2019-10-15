@@ -29,6 +29,7 @@ const routes: Routes = [
   { path: 'buscarporaut', loadChildren: './buscarporaut/buscarporaut.module#BuscarporautPageModule' },
   { path: 'buscarporpro', loadChildren: './buscarporpro/buscarporpro.module#BuscarporproPageModule' },
   { path: 'mapa', loadChildren: './mapa/mapa.module#MapaPageModule' },
+  { path: 'tipo-p', loadChildren: './tipo-p/tipo-p.module#TipoPPageModule' },
 
 
 

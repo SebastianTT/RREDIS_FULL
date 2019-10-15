@@ -5,10 +5,54 @@
 
 .bg-image{
 	background-image: url('http://www.fondosni.com/images/2012-09-22/Fondo%20azul%20con%20rosa%20y%20naranja-768139.jpg');
-	backgroun-size: contain;
+	background-size: contain;
 
 	}
 
 .no-scroll .scroll-content{
 	overflow: hidden;
 	}
+	.login-content{
+    --background: var(--ion-color-medium-tint);
+  }
+  
+  .logo {
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .description {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .log-in-button {
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  .login-content{
+    --background: var(--ion-color-medium-tint);
+  }
+  
+  .logo {
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .description {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .log-in-button {
+    margin-top: 40px;
+    font-weight: bold;
+  }
