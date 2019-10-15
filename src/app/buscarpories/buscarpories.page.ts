@@ -27,7 +27,6 @@ datos.getDatos().subscribe(datosagenda => {
 
 });
 }
-
   selectFruit(campus){ 
     this.show = true;
     this.idSelected = campus;
@@ -41,6 +40,7 @@ datos.getDatos().subscribe(datosagenda => {
 
     });
   }
+
 
   buscar(event){
     console.log(event);

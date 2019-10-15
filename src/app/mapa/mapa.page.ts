@@ -44,7 +44,6 @@ dis2: any;
     this.map.setZoom(17);
 
     var marker = new google.maps.Marker({
-
     position:  {lat:resp.coords.latitude, lng:resp.coords.longitude},
     map: this.map,
     title: 'Ubicación actual',
@@ -57,7 +56,6 @@ dis2: any;
         },
 
   });
-
     var marke = new google.maps.Marker({
 
     position:  {  lat: 4.0690246, 
