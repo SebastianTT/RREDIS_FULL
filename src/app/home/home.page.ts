@@ -16,12 +16,24 @@ export class HomePage {
   sentTimestamp;
   user: any;
   userReady: boolean = false;
+  subscribe: any;
   constructor(private googlePlus: GooglePlus,
     private nativeStorage: NativeStorage,
     public loadingController: LoadingController,
     private router: Router,
     private platform: Platform,
     public alertController: AlertController) {
+
+  	this.subscribe = this.platform.backButton.subscribeWithPriority(666666,()=>{
+  			if(this.constructor.name == "HomePage")
+  			{
+  				if(window.confirm("¿DESEAS SALIR?"))
+  				{
+  					navigator["app"].exitApp();
+  			navigator["app"].exitApp();
+  				}
+  			}
+  		})
   }
 
   async doGoogleLogin(){
