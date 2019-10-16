@@ -14,7 +14,7 @@ import {environment} from './../../environments/environment';
 export class HomePage {
   hasVerifiedEmail = true;
   sentTimestamp;
-  user: any;
+  userr: any;
   userReady: boolean = false;
   subscribe: any;
   constructor(private googlePlus: GooglePlus,
@@ -58,8 +58,10 @@ export class HomePage {
         }, (error) => {
           console.log(error);
         })
+        this.userr = user;
         this.si();
         loading.dismiss();
+
       }, err => {
         console.log(err);
         if(!this.platform.is('cordova')){
@@ -72,7 +74,7 @@ export class HomePage {
   }
 
   si(){
-    this.router.navigate(["/user"]);
+    this.router.navigate(["/list"]);
   }
 
   async presentAlert() {

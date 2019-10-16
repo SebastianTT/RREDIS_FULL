@@ -41,11 +41,6 @@ export class AppComponent {
       icon: 'map'
     },
     {
-      title: 'User',
-      url: '/user',
-      icon: 'people'
-    },
-    {
       title: 'Patrocinadores',
       url: '/patrocinadores',
       icon: 'people'

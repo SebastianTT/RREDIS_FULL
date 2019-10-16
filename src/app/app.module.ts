@@ -21,19 +21,16 @@ import  {PipeiesModule} from '../app/pipeies/pipeies.module'
 import  {PipeautModule} from '../app/pipeaut/pipeaut.module'
 import  {PipeproModule} from '../app/pipepro/pipepro.module'
 import { Geolocation } from '@ionic-native/geolocation/ngx';
-
-
-
-  var firebaseConfig = {
-    apiKey: "AIzaSyB3NjEPgZUk4DZk3bQHS9xiKpuHJD8QhLU",
-    authDomain: "reddisbd.firebaseapp.com",
-    databaseURL: "https://reddisbd.firebaseio.com",
-    projectId: "reddisbd",
-    storageBucket: "reddisbd.appspot.com",
-    messagingSenderId: "372551234381",
-    appId: "1:372551234381:web:7b8086601d8f14def17d04",
-    measurementId: "G-JX1SWFBZMT"
-  };
+var firebaseConfig = {
+  apiKey: "AIzaSyAAxPEi-X-JFIsYajzk0gzLdDND-SMspTg",
+  authDomain: "decent-era-254723.firebaseapp.com",
+  databaseURL: "https://decent-era-254723.firebaseio.com",
+  projectId: "decent-era-254723",
+  storageBucket: "decent-era-254723.appspot.com",
+  messagingSenderId: "78586309499",
+  appId: "1:78586309499:web:adaa6693778e9c84666bde",
+  measurementId: "G-HV33K1L96F"
+};
 
 @NgModule({
   declarations: [AppComponent],
